@@ -23,4 +23,6 @@ sealed class TrackItem : Item {
 		val id: String,
 		val title: String
 	) : TrackItem()
+
+	object Separator : TrackItem()
 }

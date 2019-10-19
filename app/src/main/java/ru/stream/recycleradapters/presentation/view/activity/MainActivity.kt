@@ -1,4 +1,4 @@
-package ru.stream.recycleradapters
+package ru.stream.recycleradapters.presentation.view.activity
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,9 +9,10 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
-import ru.stream.recycleradapters.presentation.view.DelegatedAdapterFragment
-import ru.stream.recycleradapters.presentation.view.MainFragment
-import ru.stream.recycleradapters.presentation.view.RegularAdapterFragment
+import ru.stream.recycleradapters.R
+import ru.stream.recycleradapters.presentation.view.delegatedadapter.DelegatedAdapterFragment
+import ru.stream.recycleradapters.presentation.view.main.MainFragment
+import ru.stream.recycleradapters.presentation.view.regularadapter.RegularAdapterFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

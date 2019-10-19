@@ -1,4 +1,4 @@
-package ru.stream.recycleradapters.presentation.view
+package ru.stream.recycleradapters.presentation.view.main
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/offset_4"
     app:cardCornerRadius="@dimen/offset_4"
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true">
@@ -39,7 +40,7 @@
             android:id="@+id/textTeacherLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/offset_24"
+            android:layout_marginTop="@dimen/offset_16"
             android:text="@string/track_teacher_label"
             app:layout_constraintEnd_toEndOf="@id/textDate"
             app:layout_constraintStart_toStartOf="@id/textTitle"

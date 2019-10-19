@@ -6,4 +6,10 @@
 	<string name="nav_header_subtitle"> </string>
 	<string name="nav_header_desc">Navigation header</string>
 	<string name="action_settings">Settings</string>
+
+	<string name="main_instruction">Use drawer menu</string>
+
+	<string name="track_teacher_label">Учитель</string>
+
+
 </resources>

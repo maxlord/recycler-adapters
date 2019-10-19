@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_regular_adapter.*
 import org.threeten.bp.LocalDateTime
@@ -26,7 +27,6 @@ class DelegatedAdapterFragment : Fragment() {
 	private val introLessonDelegate = IntroLessonDelegate(dateFormatter)
 	private val regularLessonDelegate = RegularLessonDelegate(dateFormatter)
 	private val examDelegate = ExamDelegate()
-
 	private val adapter: SimpleAdapter<Item> = SimpleAdapter<Item>().also {
 		it.addDelegates(
 			separatorDelegate,
@@ -49,6 +49,11 @@ class DelegatedAdapterFragment : Fragment() {
 		recycler.adapter = adapter
 
 		adapter.attachItems(prepareTrackItems())
+
+		adapter.itemClicksObservable
+			.subscribe {
+				Toast.makeText(requireContext(), "Item: $it", Toast.LENGTH_LONG).show()
+			}
 	}
 
 	private fun prepareTrackItems(): List<Item> {
